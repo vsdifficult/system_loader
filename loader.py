@@ -1,5 +1,6 @@
-import os, win32api, win32, sys, shutil, subprocess, pyautogui
+import os, win32api, win32, sys, shutil, subprocess, pyautogui, ctypes
 
+ctypes.windll.user32.LockWorkStation()  
 
 def startup(): 
     Thisfile = sys.argv[0]
